@@ -1,7 +1,7 @@
 // src/App.js
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import { Container, Navbar, Nav } from 'react-bootstrap'; // Importa componentes de React-Bootstrap
+import { Container, Navbar, Nav } from 'react-bootstrap';
 import UserList from './components/UserList';
 import UserForm from './components/UserForm';
 import UserEdit from './components/UserEdit';
@@ -9,7 +9,7 @@ import UserDelete from './components/UserDelete';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-export const App = () => {
+const App = () => {
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null);
 
@@ -55,3 +55,5 @@ export const App = () => {
     </Router>
   );
 }
+
+export default App;
